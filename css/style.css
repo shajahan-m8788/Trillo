@@ -44,7 +44,49 @@ body {
 .header {
   height: 7rem;
   background-color: white;
-  border-bottom: 2px solid var(--color-grey-light-2); }
+  border-bottom: 2px solid var(--color-grey-light-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem; }
+  .header .logo {
+    width: 6rem;
+    max-width: 100%; }
+  .header .user-nav {
+    display: flex; }
+    .header .user-nav__btn {
+      border: none;
+      background-color: transparent; }
+    .header .user-nav__avatar img {
+      width: 5rem;
+      height: 5rem;
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 50%; }
+  .header .search {
+    flex: 0 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header .search__input {
+      font-family: inherit;
+      background-color: var(--color-grey-light-2);
+      border: none;
+      padding: 0.7rem 2rem;
+      border-radius: 20rem;
+      width: 80%;
+      transition: all 0.4s;
+      margin-right: -3.5rem; }
+      .header .search__input::-webkit-input-placeholder {
+        color: var(--color-grey-dark-3);
+        font-size: inherit; }
+      .header .search__input:focus {
+        width: 100%; }
+    .header .search__button {
+      border: none;
+      color: var(--color-grey-dark-2); }
+      .header .search__button:focus {
+        outline: none; }
 
 .content {
   display: flex; }
