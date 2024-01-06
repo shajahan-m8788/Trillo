@@ -32,12 +32,14 @@
         </form>
         <nav class="user-nav">
           <button class="user-nav__btn">
-            <i class="fa-regular fa-bookmark"></i>
-            <span>2</span>
+            <i class="fa-regular fa-bookmark"
+              ><span class="user-nav__notification">2</span></i
+            >
           </button>
           <button class="user-nav__btn">
-            <i class="fa-regular fa-comments"></i>
-            <span>4</span>
+            <i class="fa-regular fa-comments"
+              ><span class="user-nav__notification">4</span></i
+            >
           </button>
           <div class="user-nav__avatar">
             <img
@@ -48,7 +50,35 @@
         </nav>
       </header>
       <div class="content">
-        <nav class="sidebar">sidebar</nav>
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <i class="fa-sharp fa-solid fa-house side-nav__icon"></i>
+                Home
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <i class="fa-solid fa-plane-departure side-nav__icon"></i>
+                Flight
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <i class="fa-solid fa-key side-nav__icon"></i>
+                Car Rental
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <i class="fa-solid fa-map side-nav__icon"></i>
+                Tours
+              </a>
+            </li>
+          </ul>
+          <div class="side-nav__legal">&copy; All rights reserved</div>
+        </nav>
         <main class="hotel-view">Hotel</main>
       </div>
     </div>
